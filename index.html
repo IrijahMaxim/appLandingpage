@@ -1,0 +1,611 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SanZin K-Store â€” Authentic Korean Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<nav class="navbar" id="navbar">
+    <div class="container">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">
+                <div class="logo-circle" style="width:46px;height:46px;font-size:13px;">ì‹¼ì‹ </div>
+                <div class="logo-text">
+                    <span class="brand-name">SanZin</span>
+                    <span class="brand-tagline">K-Store</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="SanZin%20K-store.apk" download="SanZin K-store.apk" class="btn-nav-dl">
+                    <i class="fas fa-download"></i> Get App
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Open navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="mobile-close" id="mobileClose" aria-label="Close navigation">
+        <i class="fas fa-times"></i>
+    </button>
+    <a href="#home"     class="m-link">Home</a>
+    <a href="#menu"     class="m-link">Menu</a>
+    <a href="#features" class="m-link">Features</a>
+    <a href="#download" class="m-link">Download</a>
+    <a href="#contact"  class="m-link">Contact</a>
+    <a href="SanZin%20K-store.apk" download="SanZin K-store.apk" class="m-dl-btn">
+        <i class="fas fa-download"></i> Download APK
+    </a>
+</div>
+
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section class="hero" id="home">
+    <!-- Floating decorative dots -->
+    <div class="hero-dots" aria-hidden="true">
+        <div class="dot dot-1"></div>
+        <div class="dot dot-2"></div>
+        <div class="dot dot-3"></div>
+        <div class="dot dot-4"></div>
+        <div class="dot dot-5"></div>
+        <div class="dot dot-6"></div>
+        <div class="dot dot-7"></div>
+    </div>
+
+    <div class="container">
+        <div class="hero-wrap">
+
+            <!-- Left: Copy -->
+            <div class="hero-content">
+                <div class="h-badge">
+                    <i class="fas fa-flag"></i>&nbsp; Authentic Korean Store
+                </div>
+                <h1>
+                    AUTHENTIC<br>
+                    <span class="accent">K-STORE</span><br>
+                    IN YOUR POCKET
+                </h1>
+                <p>
+                    SanZin K-Store brings the finest Korean goods, hearty meals,
+                    and refreshing beverages right to your fingertips.
+                    Taste Korea â€” wherever you are.
+                </p>
+                <div class="hero-btns">
+                    <a href="SanZin%20K-store.apk" download="SanZin K-store.apk" class="btn-primary">
+                        <i class="fas fa-download"></i> Download APK
+                    </a>
+                    <a href="#menu" class="btn-outline">
+                        <i class="fas fa-utensils"></i> View Menu
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="h-stat">
+                        <span class="h-stat-num">20+</span>
+                        <span class="h-stat-lbl">Menu Items</span>
+                    </div>
+                    <div class="h-stat">
+                        <span class="h-stat-num">3</span>
+                        <span class="h-stat-lbl">Categories</span>
+                    </div>
+                    <div class="h-stat">
+                        <span class="h-stat-num">Free</span>
+                        <span class="h-stat-lbl">To Download</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Phone Mockups -->
+            <div class="hero-phones" aria-hidden="true">
+
+                <!-- Front phone â€“ Home Screen -->
+                <div class="phone phone-front">
+                    <div class="phone-notch"><div class="pill"></div></div>
+                    <div class="phone-screen">
+                        <div class="app-hdr">
+                            <div class="app-logo-sm">ì‹¼ì‹ </div>
+                            <span>SanZin K-Store</span>
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="app-banner">
+                            <span class="b-sub">Welcome to</span>
+                            <span class="b-main">SanZin K-Store</span>
+                            <span class="b-sub">Authentic Korean Experience</span>
+                        </div>
+                        <div class="app-cats">
+                            <div class="app-cat">
+                                <span class="c-ico">ðŸ›’</span>
+                                <span class="c-lbl">Goods</span>
+                            </div>
+                            <div class="app-cat">
+                                <span class="c-ico">ðŸ½ï¸</span>
+                                <span class="c-lbl">Meals</span>
+                            </div>
+                            <div class="app-cat">
+                                <span class="c-ico">ðŸ§‹</span>
+                                <span class="c-lbl">Drinks</span>
+                            </div>
+                        </div>
+                        <div class="app-popular">
+                            <div class="app-pop-ttl">Popular Items</div>
+                            <div class="pop-row">
+                                <div class="pop-ico">ðŸœ</div>
+                                <div>
+                                    <span class="p-name">Cheese Ramen</span>
+                                    <span class="p-tag">Popular</span>
+                                </div>
+                            </div>
+                            <div class="pop-row">
+                                <div class="pop-ico">ðŸŒ¶ï¸</div>
+                                <div>
+                                    <span class="p-name">Buldak</span>
+                                    <span class="p-tag">Spicy Pick</span>
+                                </div>
+                            </div>
+                            <div class="pop-row">
+                                <div class="pop-ico">ðŸ§‹</div>
+                                <div>
+                                    <span class="p-name">Milk Tea</span>
+                                    <span class="p-tag">Refreshing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-bar"><div class="home-ind"></div></div>
+                </div>
+
+                <!-- Back phone â€“ Menu Screen -->
+                <div class="phone phone-back">
+                    <div class="phone-notch"><div class="pill"></div></div>
+                    <div class="phone-screen">
+                        <div class="menu-scr-hdr">Our Menu</div>
+                        <div class="menu-sec-lbl">ðŸ›’ Goods</div>
+                        <div class="menu-row"><span class="mr-name">Ramen</span><span class="mr-tag">Available</span></div>
+                        <div class="menu-row"><span class="mr-name">Buldak</span><span class="mr-tag">Available</span></div>
+                        <div class="menu-row"><span class="mr-name">Teobokki</span><span class="mr-tag">Available</span></div>
+                        <div class="menu-sec-lbl">ðŸ½ï¸ Meals</div>
+                        <div class="menu-row"><span class="mr-name">Cheese Ramen</span><span class="mr-tag">Order</span></div>
+                        <div class="menu-row"><span class="mr-name">Samyang Omelet</span><span class="mr-tag">Order</span></div>
+                        <div class="menu-row"><span class="mr-name">Rice Meal</span><span class="mr-tag">Order</span></div>
+                        <div class="menu-sec-lbl">ðŸ§‹ Beverages</div>
+                        <div class="menu-row"><span class="mr-name">Milk Tea</span><span class="mr-tag">Order</span></div>
+                        <div class="menu-row"><span class="mr-name">Fruit Soda</span><span class="mr-tag">Order</span></div>
+                        <div class="menu-row"><span class="mr-name">Korean Arabica</span><span class="mr-tag">Order</span></div>
+                    </div>
+                    <div class="phone-bar"><div class="home-ind"></div></div>
+                </div>
+
+            </div><!-- /hero-phones -->
+        </div><!-- /hero-wrap -->
+    </div>
+</section>
+
+
+<!-- ============================================================
+     STATS BAND
+============================================================ -->
+<section class="stats-band">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-block fade-up">
+                <div class="sb-icon"><i class="fas fa-box-open"></i></div>
+                <div class="sb-num">20<span>+</span></div>
+                <div class="sb-lbl">Products &amp; Meals</div>
+            </div>
+            <div class="stat-block fade-up">
+                <div class="sb-icon"><i class="fas fa-download"></i></div>
+                <div class="sb-num">Free<span></span></div>
+                <div class="sb-lbl">To Download</div>
+            </div>
+            <div class="stat-block fade-up">
+                <div class="sb-icon"><i class="fas fa-tags"></i></div>
+                <div class="sb-num">3<span>+</span></div>
+                <div class="sb-lbl">Categories</div>
+            </div>
+            <div class="stat-block fade-up">
+                <div class="sb-icon"><i class="fas fa-heart"></i></div>
+                <div class="sb-num">100<span>%</span></div>
+                <div class="sb-lbl">Authentic Korean</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================================
+     MENU SECTION
+============================================================ -->
+<section class="menu-section" id="menu">
+    <div class="container">
+        <div class="section-title fade-up">
+            <span class="badge">Our Selection</span>
+            <h2>WHAT WE <span>OFFER</span></h2>
+            <p>From authentic Korean goods to hearty meals and refreshing beverages â€” SanZin K-Store has it all.</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="menu-tabs" role="tablist">
+            <button class="m-tab active" data-tab="tab-goods"     role="tab" aria-selected="true">
+                <i class="fas fa-shopping-bag"></i> Goods
+            </button>
+            <button class="m-tab"          data-tab="tab-meals"    role="tab" aria-selected="false">
+                <i class="fas fa-utensils"></i> Meals
+            </button>
+            <button class="m-tab"          data-tab="tab-bevs"     role="tab" aria-selected="false">
+                <i class="fas fa-mug-hot"></i> Beverages
+            </button>
+        </div>
+
+        <!-- Goods -->
+        <div class="menu-panel active" id="tab-goods" role="tabpanel">
+            <div class="items-grid">
+                <div class="item-card fade-up">
+                    <div class="ic-icon">ðŸœ</div>
+                    <div>
+                        <div class="ic-name">Ramen</div>
+                        <div class="ic-desc">Classic Korean instant noodles with a rich, bold broth. The ultimate comfort food.</div>
+                    </div>
+                </div>
+                <div class="item-card fade-up">
+                    <div class="ic-icon">ðŸŒ¶ï¸</div>
+                    <div>
+                        <div class="ic-name">Buldak</div>
+                        <div class="ic-desc">Fiery Korean fire chicken noodles. Intensely spicy and dangerously addictive.</div>
+                    </div>
+                </div>
+                <div class="item-card fade-up">
+                    <div class="ic-icon">ðŸŒ¿</div>
+                    <div>
+                        <div class="ic-name">Seaweed</div>
+                        <div class="ic-desc">Crispy Korean dried seaweed snacks, lightly seasoned â€” healthy and delicious.</div>
+                    </div>
+                </div>
+                <div class="item-card fade-up">
+                    <div class="ic-icon">ðŸ¢</div>
+                    <div>
+                        <div class="ic-name">Teobokki</div>
+                        <div class="ic-desc">Chewy Korean rice cakes tossed in spicy-sweet sauce â€” a classic Korean street food.</div>
+                    </div>
+                </div>
+                <div class="item-card fade-up">
+                    <div class="ic-icon">ðŸ¥¤</div>
+                    <div>
+                        <div class="ic-name">Drinks</div>
+                        <div class="ic-desc">A curated selection of Korean canned and bottled beverages to quench every thirst.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Meals -->
+        <div class="menu-panel" id="tab-meals" role="tabpanel">
+            <div class="items-grid">
+                <div class="item-card fade-up">
+                    <div class="ic-icon">ðŸŒ¶ï¸</div>
+                    <div>
+                        <div class="ic-name">Buldak</div>
+                        <div class="ic-desc">Freshly prepared buldak â€” spicy fire chicken served hot and ready to eat.</div>
+                    </div>
+                </div>
+                <div class="item-card fade-up">
+                    <div class="ic-icon">ðŸ§€</div>
+                    <div>
+                        <div class="ic-name">Cheese Ramen</div>
+                        <div class="ic-desc">Creamy cheese-topped ramen â€” rich, comforting, and always a crowd-pleaser.</div>
+                    </div>
+                </div>
+                <div class="item-card fade-up">
+                    <div class="ic-icon">ðŸ³</div>
+                    <div>
+                        <div class="ic-name">Samyang Omelets</div>
+                        <div class="ic-desc">Fluffy omelets cooked with Samyang noodles â€” a uniquely satisfying Korean fusion.</div>
+                    </div>
+                </div>
+                <div class="item-card fade-up">
+                    <div class="ic-icon">ðŸ±</div>
+                    <div>
+                        <div class="ic-name">Rice Meal</div>
+                        <div class="ic-desc">Hearty Korean-style rice meals served alongside savory sides and condiments.</div>
+                    </div>
+                </div>
+                <div class="item-card fade-up">
+                    <div class="ic-icon">â­</div>
+                    <div>
+                        <div class="ic-name">Station Specials</div>
+                        <div class="ic-desc">Chef's daily specials â€” surprise Korean dishes crafted fresh every single day.</div>
+                    </div>
+                </div>
+                <div class="item-card fade-up">
+                    <div class="ic-icon">ðŸ¥—</div>
+                    <div>
+                        <div class="ic-name">Side Dish</div>
+                        <div class="ic-desc">Korean banchan sides â€” kimchi, seasoned vegetables, and more classic accompaniments.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beverages -->
+        <div class="menu-panel" id="tab-bevs" role="tabpanel">
+            <div class="items-grid">
+                <div class="item-card fade-up">
+                    <div class="ic-icon">ðŸ§‹</div>
+                    <div>
+                        <div class="ic-name">Milk Tea</div>
+                        <div class="ic-desc">Creamy, flavored milk teas â€” from Dark Chocolate and Hokkaido to Matcha and Taro.</div>
+                    </div>
+                </div>
+                <div class="item-card fade-up">
+                    <div class="ic-icon">ðŸ“</div>
+                    <div>
+                        <div class="ic-name">Fruit Soda</div>
+                        <div class="ic-desc">Vibrant, sparkling fruit sodas in Mango Berry, Blueberry, Green Apple, and more.</div>
+                    </div>
+                </div>
+                <div class="item-card fade-up">
+                    <div class="ic-icon">â˜•</div>
+                    <div>
+                        <div class="ic-name">Korean Arabica</div>
+                        <div class="ic-desc">Premium Korean Arabica coffee â€” rich and aromatic, available as one shot or double shot.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ============================================================
+     FEATURES SECTION
+============================================================ -->
+<section class="features-section" id="features">
+    <div class="container">
+        <div class="section-title fade-up">
+            <span class="badge">App Features</span>
+            <h2>WHY CHOOSE <span>SANZIN</span></h2>
+            <p>The SanZin K-Store app is built to make your Korean experience seamless, fast, and delightful.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feat-card fade-up">
+                <div class="fc-icon"><i class="fas fa-bolt"></i></div>
+                <h3>Easy Ordering</h3>
+                <p>Browse, pick, and order your favorite Korean goods and meals with just a few taps.</p>
+            </div>
+            <div class="feat-card fade-up">
+                <div class="fc-icon"><i class="fas fa-fire"></i></div>
+                <h3>Daily Specials</h3>
+                <p>Never miss a deal â€” Station Specials and daily offers are updated fresh every day.</p>
+            </div>
+            <div class="feat-card fade-up">
+                <div class="fc-icon"><i class="fas fa-leaf"></i></div>
+                <h3>Fresh &amp; Authentic</h3>
+                <p>All products are sourced fresh and authentic, bringing the true taste of Korea to you.</p>
+            </div>
+            <div class="feat-card fade-up">
+                <div class="fc-icon"><i class="fas fa-mobile-screen"></i></div>
+                <h3>Mobile First</h3>
+                <p>Designed beautifully for your phone â€” smooth, fast, and intuitive on Android.</p>
+            </div>
+            <div class="feat-card fade-up">
+                <div class="fc-icon"><i class="fas fa-clock-rotate-left"></i></div>
+                <h3>Order History</h3>
+                <p>Track past orders and quickly reorder your favorites with a single tap.</p>
+            </div>
+            <div class="feat-card fade-up">
+                <div class="fc-icon"><i class="fas fa-heart"></i></div>
+                <h3>Made for Everyone</h3>
+                <p>Whether you're a longtime K-food fan or trying it for the first time, SanZin K-Store has something for you.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================================
+     BEVERAGES HIGHLIGHTS
+============================================================ -->
+<section class="bevs-section">
+    <div class="container">
+        <div class="section-title fade-up">
+            <span class="badge">Beverages</span>
+            <h2>QUENCH YOUR <span>THIRST</span></h2>
+            <p>A delightful selection of drinks crafted to complement your Korean feast.</p>
+        </div>
+        <div class="bevs-grid">
+
+            <!-- Milk Tea -->
+            <div class="bev-card fade-up">
+                <span class="bev-emoji">ðŸ§‹</span>
+                <h3>Milk Tea</h3>
+                <p>Indulge in a wide range of creamy milk teas. Available in 16 oz and 22 oz.</p>
+                <div class="bev-tags">
+                    <span class="bev-tag">Dark Chocolate</span>
+                    <span class="bev-tag">Okinawa</span>
+                    <span class="bev-tag">Hokkaido</span>
+                    <span class="bev-tag">Strawberry</span>
+                    <span class="bev-tag">Cookies &amp; Cream</span>
+                    <span class="bev-tag">Wintermelon</span>
+                    <span class="bev-tag">Red Velvet</span>
+                    <span class="bev-tag">Salted Caramel</span>
+                    <span class="bev-tag">Matcha</span>
+                    <span class="bev-tag">Taro</span>
+                </div>
+            </div>
+
+            <!-- Fruit Soda -->
+            <div class="bev-card fade-up">
+                <span class="bev-emoji">ðŸ“</span>
+                <h3>Fruit Soda</h3>
+                <p>Fizzy, vibrant fruit sodas â€” refreshing in every sip. Available in 16 oz and 22 oz.</p>
+                <div class="bev-tags">
+                    <span class="bev-tag">Mango Berry</span>
+                    <span class="bev-tag">Blueberry</span>
+                    <span class="bev-tag">Green Apple</span>
+                    <span class="bev-tag">Strawberry</span>
+                    <span class="bev-tag">Four Seasons</span>
+                    <span class="bev-tag">Blueberry Milk</span>
+                    <span class="bev-tag">Mango Milk</span>
+                    <span class="bev-tag">Strawberry Milk</span>
+                    <span class="bev-tag">+ Yakult Add-on</span>
+                </div>
+            </div>
+
+            <!-- Korean Arabica -->
+            <div class="bev-card fade-up">
+                <span class="bev-emoji">â˜•</span>
+                <h3>Korean Arabica</h3>
+                <p>Premium Korean Arabica coffee â€” rich, aromatic, and smooth from bean to cup.</p>
+                <div class="bev-tags">
+                    <span class="bev-tag">One Shot</span>
+                    <span class="bev-tag">Double Shot</span>
+                    <span class="bev-tag">Hot</span>
+                    <span class="bev-tag">Iced</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================================
+     DOWNLOAD CTA
+============================================================ -->
+<section class="dl-section" id="download">
+    <div class="container">
+        <div class="dl-inner">
+            <div class="dl-logo">ì‹¼ì‹ </div>
+            <h2>GET THE <span>SANZIN</span> APP</h2>
+            <p>
+                Download the SanZin K-Store app now and enjoy authentic Korean goods,
+                hearty meals, and refreshing beverages right at your fingertips.
+            </p>
+            <div class="dl-btns">
+                <a href="SanZin%20K-store.apk" download="SanZin K-store.apk" class="dl-btn dl-btn-red">
+                    <span class="dl-ico"><i class="fab fa-android"></i></span>
+                    <div class="dl-btn-txt">
+                        <span class="dl-sm">Download for Android</span>
+                        <span class="dl-lg">SanZin K-Store.apk</span>
+                    </div>
+                </a>
+                <a href="#menu" class="dl-btn dl-btn-ghost">
+                    <span class="dl-ico"><i class="fas fa-utensils"></i></span>
+                    <div class="dl-btn-txt">
+                        <span class="dl-sm">Browse our</span>
+                        <span class="dl-lg">Full Menu</span>
+                    </div>
+                </a>
+            </div>
+            <p class="dl-note">
+                <i class="fas fa-shield-halved"></i>
+                Free to download &nbsp;Â·&nbsp; Android 5.0+ &nbsp;Â·&nbsp; No account required
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer" id="contact">
+    <div class="container">
+        <div class="footer-grid">
+
+            <!-- Brand -->
+            <div class="f-brand">
+                <div class="f-brand-row">
+                    <div class="logo-circle" style="width:44px;height:44px;font-size:12px;">ì‹¼ì‹ </div>
+                    <span class="f-brand-name">SanZin K-Store</span>
+                </div>
+                <p>Your favorite Korean store, now in your pocket. Authentic goods, delicious meals, and refreshing drinks â€” served with love.</p>
+                <div class="social-row">
+                    <a href="#" class="soc-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="soc-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="soc-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="soc-btn" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Menu links -->
+            <div class="f-col">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="#menu"><i class="fas fa-chevron-right"></i> Goods</a></li>
+                    <li><a href="#menu"><i class="fas fa-chevron-right"></i> Meals</a></li>
+                    <li><a href="#menu"><i class="fas fa-chevron-right"></i> Beverages</a></li>
+                    <li><a href="#menu"><i class="fas fa-chevron-right"></i> Station Specials</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick links -->
+            <div class="f-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#features"><i class="fas fa-chevron-right"></i> Features</a></li>
+                    <li><a href="#download"><i class="fas fa-chevron-right"></i> Download</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="f-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Visit Our Store</a></li>
+                    <li><a href="mailto:hello@sanzinkstore.com"><i class="fas fa-envelope"></i> hello@sanzinkstore.com</a></li>
+                    <li><a href="tel:+63000000000"><i class="fas fa-phone"></i> +63 (0) 000 000 0000</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Monâ€“Sun, 10AMâ€“10PM</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 <span>SanZin K-Store</span>. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+
+<!-- ============================================================
+     JAVASCRIPT
+============================================================ -->
+<script src="scripts.js"></script>
+</body>
+</html>
