@@ -56,8 +56,14 @@ function updateActiveLink() {
     sections.forEach(sec => {
         if (pos >= sec.offsetTop && pos < sec.offsetTop + sec.offsetHeight) {
             links.forEach(l => {
-                l.classList.toggle('active', l.getAttribute('href') === `#${sec.id}`);
+                l.classList.toggle('active', l.getAttribute('href') === '#' + sec.id);
             });
         }
     });
 }
+
+/* ---- Lazy-load product photos ---- */
+document.querySelectorAll('.prod-photo').forEach(img => {
+    img.addEventListener('load', () => img.classList.add('loaded'));
+    if (img.complete) img.classList.add('loaded');
+});

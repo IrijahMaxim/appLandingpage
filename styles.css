@@ -80,7 +80,6 @@ img { max-width: 100%; display: block; }
     font-size: 0.95rem;
 }
 
-/* Korean logo circle reused site-wide */
 .logo-circle {
     background: #000;
     border: 2.5px solid #fff;
@@ -123,7 +122,7 @@ img { max-width: 100%; display: block; }
     align-items: center;
     gap: 0.8rem;
 }
-.nav-logo .logo-circle {
+.nav-logo-circle {
     width: 46px;
     height: 46px;
     font-size: 13px;
@@ -191,7 +190,6 @@ img { max-width: 100%; display: block; }
     transform: translateY(-1px);
     box-shadow: 0 4px 14px rgba(204,0,0,0.4);
 }
-
 .hamburger {
     display: none;
     background: none;
@@ -261,7 +259,6 @@ img { max-width: 100%; display: block; }
     background: linear-gradient(140deg, #080808 0%, #100000 55%, #160000 100%);
     padding: 7rem 0 4rem;
 }
-/* Diagonal accent panel */
 .hero::before {
     content: '';
     position: absolute;
@@ -272,7 +269,6 @@ img { max-width: 100%; display: block; }
     clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%);
     pointer-events: none;
 }
-/* Diagonal stripe overlay */
 .hero::after {
     content: '';
     position: absolute;
@@ -288,19 +284,15 @@ img { max-width: 100%; display: block; }
     );
     pointer-events: none;
 }
-/* Floating geometric dots */
 .hero-dots { position: absolute; inset: 0; pointer-events: none; }
-.dot {
-    position: absolute;
-    border-radius: 50%;
-}
+.dot { position: absolute; border-radius: 50%; }
 .dot-1 { width:220px; height:220px; border:2px solid rgba(204,0,0,0.15); top:8%;  left:-90px; }
 .dot-2 { width:100px; height:100px; border:2px solid rgba(204,0,0,0.12); top:72%; left:4%; }
-.dot-3 { width:60px;  height:60px;  background:rgba(204,0,0,0.07);       top:18%; right:14%; border-radius:50%; }
-.dot-4 { width:130px; height:130px; border:2px solid rgba(204,0,0,0.1);   bottom:12%; right:18%; }
-.dot-5 { width:30px;  height:30px;  background:rgba(204,0,0,0.12);        top:42%; left:42%; border-radius:50%; }
-.dot-6 { width:14px;  height:14px;  background:rgba(204,0,0,0.3);         top:28%; left:30%; border-radius:50%; }
-.dot-7 { width:10px;  height:10px;  background:rgba(255,255,255,0.06);    bottom:30%; left:22%; border-radius:50%; }
+.dot-3 { width:60px;  height:60px;  background:rgba(204,0,0,0.07);       top:18%; right:14%; }
+.dot-4 { width:130px; height:130px; border:2px solid rgba(204,0,0,0.1);  bottom:12%; right:18%; }
+.dot-5 { width:30px;  height:30px;  background:rgba(204,0,0,0.12);       top:42%; left:42%; }
+.dot-6 { width:14px;  height:14px;  background:rgba(204,0,0,0.3);        top:28%; left:30%; }
+.dot-7 { width:10px;  height:10px;  background:rgba(255,255,255,0.06);   bottom:30%; left:22%; }
 
 .hero-wrap {
     display: grid;
@@ -383,10 +375,7 @@ img { max-width: 100%; display: block; }
     background: rgba(255,255,255,0.05);
     transform: translateY(-2px);
 }
-.hero-stats {
-    display: flex;
-    gap: 2.5rem;
-}
+.hero-stats { display: flex; gap: 2.5rem; }
 .h-stat .h-stat-num {
     display: block;
     font-size: 1.55rem;
@@ -401,189 +390,65 @@ img { max-width: 100%; display: block; }
 }
 
 /* ================================================
-   PHONE MOCKUPS
+   HERO PRODUCT SHOWCASE
 ================================================ */
-.hero-phones {
-    position: relative;
-    height: 560px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-.phone {
-    position: absolute;
-    border-radius: 36px;
-    background: #0e0e0e;
-    box-shadow:
-        0 0 0 1.5px rgba(255,255,255,0.08),
-        0 30px 70px rgba(0,0,0,0.85);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-.phone-front {
-    width: 238px;
-    height: 488px;
-    left: 20px;
-    bottom: 0;
-    z-index: 2;
-    animation: floatUp 4s ease-in-out infinite;
-}
-.phone-back {
-    width: 215px;
-    height: 440px;
-    right: 20px;
-    bottom: 0;
-    z-index: 1;
-    transform: rotate(9deg);
-    opacity: 0.82;
-    animation: floatDown 4s ease-in-out infinite;
-    animation-delay: 0.6s;
-}
-@keyframes floatUp {
-    0%,100% { transform: translateY(0); }
-    50%      { transform: translateY(-14px); }
-}
-@keyframes floatDown {
-    0%,100% { transform: rotate(9deg) translateY(0); }
-    50%      { transform: rotate(9deg) translateY(-9px); }
-}
-.phone-notch {
-    height: 26px;
-    background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.pill { width: 76px; height: 10px; background: #1c1c1c; border-radius: 10px; }
-.phone-screen {
-    flex: 1;
-    overflow: hidden;
-    background: #0a0a0a;
-    display: flex;
-    flex-direction: column;
-}
-.phone-bar {
-    height: 20px;
-    background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.home-ind { width: 58px; height: 3px; background: #2a2a2a; border-radius: 3px; }
-
-/* ---- App Header ---- */
-.app-hdr {
-    background: var(--red-dark);
-    padding: 10px 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.app-logo-sm {
-    width: 28px; height: 28px;
-    background: #000;
-    border: 1.5px solid #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 7px;
-    font-weight: 900;
-    color: #fff;
-}
-.app-hdr span { font-size: 10px; font-weight: 700; color: #fff; }
-.app-hdr i { font-size: 12px; color: rgba(255,255,255,0.7); }
-
-/* ---- App Banner ---- */
-.app-banner {
-    background: linear-gradient(135deg, var(--red-dark), var(--red));
-    padding: 14px;
-    text-align: center;
-}
-.app-banner .b-sub { display: block; font-size: 8px; color: rgba(255,255,255,0.75); }
-.app-banner .b-main { display: block; font-size: 13px; font-weight: 900; color: #fff; margin: 2px 0; }
-
-/* ---- App Category Grid ---- */
-.app-cats {
-    padding: 12px;
+.hero-products {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 7px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    position: relative;
+    z-index: 2;
 }
-.app-cat {
-    background: #1a1a1a;
-    border-radius: 10px;
-    padding: 10px 5px;
-    text-align: center;
-    border: 1px solid #252525;
+.prod-card {
+    background: var(--bg-card);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: var(--transition);
 }
-.app-cat .c-ico { font-size: 17px; display: block; margin-bottom: 4px; }
-.app-cat .c-lbl { font-size: 7px; color: #bbb; font-weight: 600; }
-
-/* ---- Featured items ---- */
-.app-popular { padding: 0 12px 12px; }
-.app-pop-ttl {
-    font-size: 8px;
-    font-weight: 700;
-    color: var(--red-bright);
-    text-transform: uppercase;
-    letter-spacing: 0.6px;
-    margin-bottom: 7px;
+.prod-offset { margin-top: 1.5rem; }
+.prod-card:hover {
+    border-color: var(--red-border);
+    transform: translateY(-5px);
+    box-shadow: 0 14px 36px rgba(204,0,0,0.22);
 }
-.pop-row {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: #1a1a1a;
-    border-radius: 8px;
-    padding: 7px 9px;
-    margin-bottom: 5px;
-    border: 1px solid #252525;
-}
-.pop-ico {
-    width: 28px; height: 28px;
-    background: rgba(204,0,0,0.15);
-    border-radius: 7px;
+.prod-visual {
+    aspect-ratio: 4 / 3;
+    background: linear-gradient(135deg, var(--g1, #2a0000), var(--g2, #100000));
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 13px;
-    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
 }
-.pop-row .p-name { display: block; font-size: 8px; font-weight: 700; color: #fff; }
-.pop-row .p-tag  { display: block; font-size: 7px; color: var(--red-bright); font-weight: 600; }
-
-/* ---- Back phone – Menu Screen ---- */
-.menu-scr-hdr {
-    background: var(--red);
-    padding: 9px 14px;
-    font-size: 10px;
+.prod-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.prod-photo.loaded { opacity: 1; }
+.prod-icon {
+    font-size: 2.8rem;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6));
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+.prod-card:hover .prod-icon { transform: scale(1.12); }
+.prod-label {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.82rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--white);
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    background: var(--bg-card);
+    border-top: 1px solid var(--border);
 }
-.menu-sec-lbl {
-    background: var(--red-dark);
-    padding: 5px 12px;
-    font-size: 8px;
-    font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-.menu-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 12px;
-    border-bottom: 1px solid #1a1a1a;
-}
-.menu-row .mr-name { font-size: 8px; color: #ccc; }
-.menu-row .mr-tag  { font-size: 8px; color: var(--red-bright); font-weight: 600; }
 
 /* ================================================
    STATS BAND
@@ -634,7 +499,6 @@ img { max-width: 100%; display: block; }
    MENU SECTION
 ================================================ */
 .menu-section { padding: 5.5rem 0; }
-
 .menu-tabs {
     display: flex;
     justify-content: center;
@@ -655,6 +519,7 @@ img { max-width: 100%; display: block; }
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    font-family: inherit;
 }
 .m-tab:hover,
 .m-tab.active {
@@ -665,7 +530,6 @@ img { max-width: 100%; display: block; }
 }
 .menu-panel { display: none; }
 .menu-panel.active { display: block; }
-
 .items-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -760,16 +624,8 @@ img { max-width: 100%; display: block; }
     font-size: 1.4rem;
     margin-bottom: 1.3rem;
 }
-.feat-card h3 {
-    font-size: 1.05rem;
-    font-weight: 700;
-    margin-bottom: 0.7rem;
-}
-.feat-card p {
-    color: var(--gray);
-    font-size: 0.86rem;
-    line-height: 1.65;
-}
+.feat-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.7rem; }
+.feat-card p { color: var(--gray); font-size: 0.86rem; line-height: 1.65; }
 
 /* ================================================
    BEVERAGES HIGHLIGHT
@@ -793,28 +649,10 @@ img { max-width: 100%; display: block; }
     transform: translateY(-5px);
     box-shadow: var(--shadow-red);
 }
-.bev-card .bev-emoji {
-    font-size: 3rem;
-    display: block;
-    margin-bottom: 1rem;
-}
-.bev-card h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 0.6rem;
-}
-.bev-card > p {
-    color: var(--gray);
-    font-size: 0.82rem;
-    line-height: 1.55;
-    margin-bottom: 1.4rem;
-}
-.bev-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    justify-content: center;
-}
+.bev-card .bev-emoji { font-size: 3rem; display: block; margin-bottom: 1rem; }
+.bev-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.6rem; }
+.bev-card > p { color: var(--gray); font-size: 0.82rem; line-height: 1.55; margin-bottom: 1.4rem; }
+.bev-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; justify-content: center; }
 .bev-tag {
     background: var(--red-muted);
     color: var(--red-bright);
@@ -844,11 +682,7 @@ img { max-width: 100%; display: block; }
     background: radial-gradient(circle, rgba(204,0,0,0.07) 0%, transparent 68%);
     pointer-events: none;
 }
-.dl-inner {
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
+.dl-inner { text-align: center; position: relative; z-index: 1; }
 .dl-logo {
     width: 96px; height: 96px;
     background: #000;
@@ -928,15 +762,8 @@ img { max-width: 100%; display: block; }
     font-weight: 400;
     opacity: 0.8;
 }
-.dl-btn-txt .dl-lg {
-    display: block;
-    font-size: 1rem;
-    font-weight: 700;
-}
-.dl-note {
-    color: var(--gray);
-    font-size: 0.78rem;
-}
+.dl-btn-txt .dl-lg { display: block; font-size: 1rem; font-weight: 700; }
+.dl-note { color: var(--gray); font-size: 0.78rem; }
 .dl-note i { color: var(--red-bright); margin-right: 0.3rem; }
 
 /* ================================================
@@ -960,11 +787,7 @@ img { max-width: 100%; display: block; }
     gap: 0.8rem;
     margin-bottom: 1rem;
 }
-.f-brand-row .logo-circle { width: 44px; height: 44px; font-size: 12px; }
-.f-brand-row .f-brand-name {
-    font-size: 1.1rem;
-    font-weight: 800;
-}
+.f-brand-row .f-brand-name { font-size: 1.1rem; font-weight: 800; }
 .f-brand > p {
     color: var(--gray);
     font-size: 0.84rem;
@@ -1017,10 +840,7 @@ img { max-width: 100%; display: block; }
     transition: var(--transition);
 }
 .f-col ul li a i { font-size: 0.68rem; color: var(--red); }
-.f-col ul li a:hover {
-    color: var(--red-bright);
-    padding-left: 3px;
-}
+.f-col ul li a:hover { color: var(--red-bright); padding-left: 3px; }
 .footer-bottom {
     border-top: 1px solid #1a1a1a;
     padding-top: 1.5rem;
@@ -1030,17 +850,10 @@ img { max-width: 100%; display: block; }
     flex-wrap: wrap;
     gap: 1rem;
 }
-.footer-bottom p {
-    color: var(--gray);
-    font-size: 0.8rem;
-}
+.footer-bottom p { color: var(--gray); font-size: 0.8rem; }
 .footer-bottom p span { color: var(--red-bright); }
 .footer-bottom-links { display: flex; gap: 1.5rem; }
-.footer-bottom-links a {
-    color: var(--gray);
-    font-size: 0.8rem;
-    transition: var(--transition);
-}
+.footer-bottom-links a { color: var(--gray); font-size: 0.8rem; transition: var(--transition); }
 .footer-bottom-links a:hover { color: var(--white); }
 
 /* ================================================
@@ -1065,10 +878,7 @@ img { max-width: 100%; display: block; }
     z-index: 500;
 }
 .scroll-top.show { opacity: 1; pointer-events: all; }
-.scroll-top:hover {
-    background: var(--red-bright);
-    transform: translateY(-3px);
-}
+.scroll-top:hover { background: var(--red-bright); transform: translateY(-3px); }
 
 /* ================================================
    SCROLL FADE-IN ANIMATION
@@ -1078,28 +888,22 @@ img { max-width: 100%; display: block; }
     transform: translateY(28px);
     transition: opacity 0.65s ease, transform 0.65s ease;
 }
-.fade-up.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+.fade-up.visible { opacity: 1; transform: translateY(0); }
 
 /* ================================================
-   RESPONSIVE — TABLET (768–1024px)
+   RESPONSIVE -- TABLET (768-1024px)
 ================================================ */
 @media (max-width: 1024px) {
     .hero-wrap { gap: 2rem; }
-    .hero-phones { height: 460px; }
-    .phone-front { width: 205px; height: 420px; }
-    .phone-back  { width: 185px; height: 375px; }
-
     .features-grid { grid-template-columns: repeat(2, 1fr); }
     .bevs-grid { grid-template-columns: repeat(2, 1fr); }
     .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
     .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    .hero-products { gap: 0.75rem; }
 }
 
 /* ================================================
-   RESPONSIVE — MOBILE (<768px)
+   RESPONSIVE -- MOBILE (<768px)
 ================================================ */
 @media (max-width: 768px) {
     .nav-links, .btn-nav-dl { display: none; }
@@ -1109,18 +913,15 @@ img { max-width: 100%; display: block; }
         padding: 6rem 0 4rem;
         text-align: center;
     }
-    .hero-wrap {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
+    .hero-wrap { grid-template-columns: 1fr; gap: 3rem; }
     .hero-content p { margin-left: auto; margin-right: auto; }
     .hero-btns, .hero-stats { justify-content: center; }
-    .hero-phones {
-        height: 380px;
-        order: -1;
+
+    .hero-products {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.6rem;
     }
-    .phone-front { width: 168px; height: 340px; left: 18px; }
-    .phone-back  { width: 152px; height: 305px; right: 18px; }
+    .prod-offset { margin-top: 0; }
 
     .hero::before { width: 100%; clip-path: none; opacity: 0.4; }
 
@@ -1136,9 +937,8 @@ img { max-width: 100%; display: block; }
 @media (max-width: 480px) {
     .container { padding: 0 1.1rem; }
     .hero-content h1 { font-size: 1.9rem; }
-    .hero-phones { height: 320px; }
-    .phone-front { width: 145px; height: 292px; left: 10px; }
-    .phone-back  { width: 130px; height: 260px; right: 10px; }
+    .hero-products { grid-template-columns: repeat(2, 1fr); }
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
     .hero-stats { gap: 1.5rem; }
+    .prod-icon { font-size: 2.2rem; }
 }
